@@ -3,7 +3,7 @@ import CartIcon from "./CartIcon";
 function CartWidget() {
   return (
     <div>
-      <CartIcon /> 
+      <CartIcon/> 
       <span>5</span>
     </div>
   );

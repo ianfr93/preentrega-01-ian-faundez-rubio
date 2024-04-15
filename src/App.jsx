@@ -5,8 +5,8 @@ import NavBar from "./Components/NavBar";
 function App() {
   return (
     <div>
-      <Brand />
-      <NavBar />
+      <Brand/>
+      <NavBar/>
     </div>
   );
 }
