@@ -1,7 +1,10 @@
 import './App.css';
 
-
 function App() {
-return <div>My APP 2</div>;
+return <div>
+ <Brand />
+      <NavBar />
+  
+  </div>;
 }
 export default App;
