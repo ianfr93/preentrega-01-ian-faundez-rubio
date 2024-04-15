@@ -2,6 +2,7 @@ import React from 'react';
 
 function CategoryList() {
   return (
+    <nav>
     <ul>
       <li>
         <a href="/#">Marcas</a>
@@ -22,6 +23,7 @@ function CategoryList() {
         <a href="/#">Servicios</a>
       </li>
     </ul>
+    </nav>
   );
 }
 
