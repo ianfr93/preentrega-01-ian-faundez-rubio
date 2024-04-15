@@ -1,10 +1,13 @@
-import './App.css';
+import "./App.css";
+import Brand from "./Components/Brand";
+import NavBar from "./Components/NavBar";
 
 function App() {
-return <div>
- <Brand />
+  return (
+    <div>
+      <Brand />
       <NavBar />
-  
-  </div>;
+    </div>
+  );
 }
 export default App;
