@@ -1,6 +1,6 @@
-import React from 'react';
 import CategoryList from './CategoryList';
 import CartWidget from './CartWidget';
+import "./NavBar.css";
 
 function NavBar() {
   return (
