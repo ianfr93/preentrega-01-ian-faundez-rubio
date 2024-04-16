@@ -15,7 +15,7 @@ function NavBar() {
         <div className='bar'></div>
         <div className='bar'></div>
       </div>
-      {/* Mostrar CategoryList o CategoryListMobile dependiendo del estado showMenu */}
+   
       {showMenu ? <CategoryListMobile /> : <CategoryList />}
       <CartWidget />
     </div>

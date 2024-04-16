@@ -7,7 +7,7 @@
  }
 
   .menu-toggle {
-    display: none; /* Ocultar el botón de hamburguesa por defecto en pantallas grandes */
+    display: none; 
     cursor: pointer;
     margin-top: 15px;
   }

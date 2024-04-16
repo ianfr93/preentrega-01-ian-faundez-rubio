@@ -1,4 +1,3 @@
-/* Estilos para la lista de categorías */
 .category-list {
     display: flex;
     flex-wrap: wrap;
@@ -25,19 +24,19 @@
     opacity: 0.9; 
 }
 .login-button {
-    background-color: #00cc66; /* Color de fondo del botón */
-    color: #fff; /* Color del texto */
-    border: none; /* Elimina el borde del botón */
-    padding: 10px 15px; /* Ajusta el padding para dar espacio al contenido */
-    border-radius: 5px; /* Redondea las esquinas del botón */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-    transition: background-color 0.3s, color 0.3s; /* Transición suave en los cambios de color */
+    background-color: #00cc66; 
+    color: #fff; 
+    border: none; 
+    padding: 10px 15px; 
+    border-radius: 5px;
+    cursor: pointer; 
+    transition: background-color 0.3s, color 0.3s; 
     margin-top: -30px;
   
 }
 
-/* Estilos cuando se pasa el mouse sobre el botón */
+
 .login-button:hover {
-    background-color: #00994d; /* Cambia el color de fondo al pasar el mouse */
+    background-color: #00994d; 
 }
 
