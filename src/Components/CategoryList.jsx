@@ -1,9 +1,8 @@
-import React from 'react';
-
+import "./CategoryList.css";
 function CategoryList() {
   return (
     <nav>
-    <ul>
+    <ul className="category-list">
       <li>
         <a href="/#">Marcas</a>
       </li>
