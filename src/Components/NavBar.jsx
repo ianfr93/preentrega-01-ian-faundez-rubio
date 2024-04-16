@@ -4,10 +4,12 @@ import CartWidget from './CartWidget';
 
 function NavBar() {
   return (
-    <div>
+    <div className='navbar__wrapper'>
+
       <CategoryList/>
       <CartWidget/>
     </div>
+   
   );
 }
 

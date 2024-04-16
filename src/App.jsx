@@ -5,9 +5,13 @@ import NavBar from "./Components/NavBar";
 function App() {
   return (
     <div>
-      <Brand/>
-      <NavBar/>
+      <div className="header__wrapper">
+        <Brand />
+        <NavBar />
+      </div>
+      {/* ItemListContainer */}
     </div>
+
   );
 }
 export default App;
