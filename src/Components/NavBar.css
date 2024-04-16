@@ -4,7 +4,8 @@
     padding: 1rem;
     align-items: center;
 
-  }
+ }
+
   .menu-toggle {
     display: none; /* Ocultar el botón de hamburguesa por defecto en pantallas grandes */
     cursor: pointer;
@@ -19,7 +20,7 @@
     transition: 0.4s;
  
   }
-  
+
   @media screen and (max-width: 768px) {
     .menu-toggle {
       display: block; 
