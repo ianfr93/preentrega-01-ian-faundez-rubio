@@ -1,10 +1,13 @@
 import CartIcon from "./CartIcon";
+import { useState } from "react";
 
 function CartWidget() {
+  const [CartItems, setCartItems]=
+  useState([5]);
   return (
     <div>
       <CartIcon width={40} height={40}/>
-      <span>5</span>
+      <span>{CartItems}</span>
     </div>
   );
 }
