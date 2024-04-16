@@ -10,7 +10,7 @@ function App() {
         <Brand />
         <NavBar />
       </div>
-      <ItemListContainer Saludo="Hola a todos los visitantes de este sitio web"/>
+      <ItemListContainer Saludo="Hola Bienvenido a tu centro de ventas Tecnologico"/>
     </div>
   );
 }
