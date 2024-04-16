@@ -1,6 +1,37 @@
 .navbar__wrapper {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     padding: 1rem;
     align-items: center;
-}
+  }
+  
+  .menu-toggle {
+    display: none; /* Ocultar el botón de hamburguesa por defecto en pantallas grandes */
+    cursor: pointer;
+  }
+  
+  .menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px;
+    transition: 0.4s;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .menu-toggle {
+      display: block; 
+    }
+  
+    .navbar__wrapper {
+      flex-direction: column; 
+    }
+  
+    .category-list {
+      display: none; 
+    }
+  
+    .category-list.active {
+      display: block; 
+    }
+  }

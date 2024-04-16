@@ -1,7 +1,10 @@
+import React from 'react';
+import logo from '../assets/azul.svg'; 
+
 function Brand() {
   return (
     <div>
-      <h1>Shoppy</h1>
+      <img src={logo} alt="Logo de Shoppy" style={{ width: '200px', height: 'auto', marginTop:'20px' }} />
     </div>
   );
 }
