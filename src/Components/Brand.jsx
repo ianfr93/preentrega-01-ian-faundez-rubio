@@ -4,7 +4,10 @@ import logo from '../assets/azul.svg';
 function Brand() {
   return (
     <div>
-      <img src={logo} alt="Logo de Shoppy" style={{ width: '200px', height: 'auto', marginTop:'20px' }} />
+
+      <a href="/">
+        <img src={logo} alt="Logo de Shoppy" style={{ width: '200px', height: 'auto', marginTop:'20px' }} />
+      </a>
     </div>
   );
 }

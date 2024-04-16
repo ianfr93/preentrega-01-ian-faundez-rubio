@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import CategoryList from './CategoryList';
+import CategoryListMobile from './CategoryListMobile';
 import CartWidget from './CartWidget';
 import './NavBar.css';
+import CartIcon from './CartIcon';
 
 function NavBar() {
   const [showMenu, setShowMenu] = useState(false);
@@ -13,7 +15,8 @@ function NavBar() {
         <div className='bar'></div>
         <div className='bar'></div>
       </div>
-      <CategoryList className={showMenu ? 'active' : ''} />
+      {/* Mostrar CategoryList o CategoryListMobile dependiendo del estado showMenu */}
+      {showMenu ? <CategoryListMobile /> : <CategoryList />}
       <CartWidget />
     </div>
   );
