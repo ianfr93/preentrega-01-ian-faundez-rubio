@@ -1,6 +1,9 @@
-.navbar__wrapper {
-    display: flex;
-    justify-content:space-between;
-    padding: 1rem;
-    align-items: center;
+.cart--container > span {
+    display: inline-block; 
+    background-color: red; 
+    border: 2px solid white; 
+    border-radius: 5px; 
+    padding: 4px; 
+    color: white;
+ 
 }
