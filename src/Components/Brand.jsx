@@ -6,7 +6,7 @@ function Brand() {
     <div>
 
       <a href="/">
-        <img src={logo} alt="Logo de Shoppy" style={{ width: '200px', height: 'auto', marginTop:'13px',}} />
+        <img src={logo} alt="Logo de Shoppy" style={{ width: '180px', height: 'auto', marginTop:'12px',}} />
       </a>
     </div>
   );

@@ -1,6 +1,7 @@
 
 import React from 'react';
 import "./CategoryListMobile.jsx";
+import "./CategoryListMobile.css";
 
 function CategoryListMobile() {
   return (
@@ -24,9 +25,13 @@ function CategoryListMobile() {
         <li>
           <a href="/#">Servicios</a>
         </li>
+     
         <li>
           <a href="/#">Seguir mi pedido</a>
         </li>
+        <li>
+        <a href="/#">Soporte online</a>
+      </li>
         <li>
           <a href="/#">contacto</a>
         </li>

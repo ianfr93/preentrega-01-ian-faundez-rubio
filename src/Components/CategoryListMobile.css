@@ -1,22 +1,20 @@
-/* Estilos para la lista de categorías */
-.category-list {
-    display: flex;
-    flex-wrap: wrap;
+
+.category-list-mobile {
     list-style: none;
-    gap: 20px;
-    padding-right: 20px;
-    margin-top: 10px;
-
-}
-
-.category-list li a {
+    padding: 0;
+  }
+  
+  .category-list-mobile li {
+    margin-bottom: 10px; 
+  }
+  
+  .category-list-mobile li a {
     text-decoration: none; 
     font-weight: 800; 
     color: #333; 
     transition: all 0.3s; 
-}
-
-.category-list li a:hover {
+  }
+  .category-list-mobile li a:hover {
     color: #00cc66; 
     transform: scale(1.09); 
     box-shadow: 0 0 10px rgba(13, 1, 47, 0.079); 
@@ -24,20 +22,18 @@
     border-radius: 5px; 
     opacity: 0.9; 
 }
-.login-button {
-    background-color: #00cc66; /* Color de fondo del botón */
-    color: #fff; /* Color del texto */
-    border: none; /* Elimina el borde del botón */
-    padding: 10px 15px; /* Ajusta el padding para dar espacio al contenido */
-    border-radius: 5px; /* Redondea las esquinas del botón */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-    transition: background-color 0.3s, color 0.3s; /* Transición suave en los cambios de color */
-    margin-top: -30px;
+
+  .login-button {
+    background-color: #00cc66; 
+    color: #fff; 
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 5px;
+    cursor: pointer; 
+    transition: background-color 0.3s, color 0.3s; 
+  }
   
-}
-
-/* Estilos cuando se pasa el mouse sobre el botón */
-.login-button:hover {
-    background-color: #00994d; /* Cambia el color de fondo al pasar el mouse */
-}
-
+  .login-button:hover {
+    background-color: #00994d; 
+  }
+  
