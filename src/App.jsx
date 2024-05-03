@@ -6,12 +6,15 @@ import ItemListContainer from './components/ItemListContainer';
 
 function App() {
   return (
-    <div className="App">
-      <Brand />
-      <NavBar />
-      <ItemListContainer />
+    <div>
+      <div className="header__wrapper">
+        <Brand />
+        <NavBar />
+      </div>
+      <ItemListContainer Saludo="Hola Bienvenido a tu centro de ventas Tecnologico"/>
     </div>
   );
 }
+
 
 export default App;
