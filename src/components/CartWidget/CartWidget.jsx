@@ -2,6 +2,7 @@ import CartIcon from "../CartIcon/CartIcon";
 import { useState } from "react";
 import "./CartIcon.css";
 
+
 function CartWidget() {
   const [CartItems, setCartItems] = useState([5]);
   
