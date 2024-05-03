@@ -1,7 +1,5 @@
 import React from 'react';
-import './CategoryListMobile.css'; // Importa el archivo CSS del componente CategoryListMobile
-import './CategoryListMobile.jsx'; // Importa el archivo JSX del componente CategoryListMobile
-
+import './CategoryListMobile.css'; 
 function CategoryListMobile() {
   return (
     <nav>
@@ -24,18 +22,15 @@ function CategoryListMobile() {
         <li>
           <a href="/#">Servicios</a>
         </li>
-     
         <li>
           <a href="/#">Seguir mi pedido</a>
         </li>
-       
         <li>
           <a href="/#">contacto</a>
         </li>
         <li>
           <button className="login-button">Ingresar</button>
         </li>
-
       </ul>
     </nav>
   );
