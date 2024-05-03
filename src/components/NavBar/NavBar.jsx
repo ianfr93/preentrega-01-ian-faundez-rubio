@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import CategoryList from './CategoryList/CategoryList'; 
-import CategoryListMobile from './CategoryListMobile/CategoryListMobile'; 
+import CategoryList from '../CategoryList/CategoryList'; 
+import CategoryListMobile from '../CategoryListMobile/CategoryListMobile'; 
 import CartWidget from './CartWidget';
 import './NavBar.css';
-import CartIcon from './CartIcon';
+import CartIcon from '../CartIcon';
 
 function NavBar() {
   const [showMenu, setShowMenu] = useState(false);
