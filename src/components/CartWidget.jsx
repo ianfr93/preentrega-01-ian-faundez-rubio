@@ -1,6 +1,6 @@
-import CartIcon from "./components/CartIcon/CartIcon"; 
-import { useState } from "react"; 
-import "./components/CartIcon/CartIcon.css"; 
+import CartIcon from "./CartIcon/CartIcon";
+import { useState } from "react";
+import "./CartIcon/CartIcon.css";
 
 function CartWidget() {
   const [CartItems, setCartItems] = useState([5]);
