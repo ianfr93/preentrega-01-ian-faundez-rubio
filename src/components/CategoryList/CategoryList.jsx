@@ -1,4 +1,4 @@
-import "./CategoryList.css"; 
+import "./CategoryList.css";
 import React from "react"; 
 
 function CategoryList() {
