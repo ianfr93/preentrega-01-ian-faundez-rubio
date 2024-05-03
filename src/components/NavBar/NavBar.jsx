@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import CategoryList from '../CategoryList/CategoryList'; 
 import CategoryListMobile from '../CategoryListMobile/CategoryListMobile'; 
-import CartWidget from './CartWidget';
+import CartWidget from "../../CartWidget";
 import './NavBar.css';
 import CartIcon from '../CartIcon';
 
