@@ -13,18 +13,14 @@ function CategoryListMobile() {
         <li>
           <a href="/#">Arma tu PC</a>
         </li>
-        <li>
-          <a href="/#">Outlet Tecnológico</a>
-        </li>
+      
         <li>
           <a href="/#">Tiendas</a>
         </li>
         <li>
           <a href="/#">Servicios</a>
         </li>
-        <li>
-          <a href="/#">Seguir mi pedido</a>
-        </li>
+      
         <li>
           <a href="/#">contacto</a>
         </li>
