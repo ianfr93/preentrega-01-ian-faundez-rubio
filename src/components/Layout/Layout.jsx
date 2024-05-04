@@ -1,4 +1,4 @@
-import Brand from "../Brand/Brand";
+import Brand from "../Brand";
 import Footer from "../Footer/Footer";
 import NavBar from "../NavBar/NavBar";
 import "./Layout.css";
