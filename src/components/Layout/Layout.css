@@ -1,17 +1,27 @@
+/* Estilos generales */
+body {
+    margin: 0; 
+    padding: 0; 
+    overflow-x: hidden; 
+}
+
+/* Layout */
 .layout-container {
-    width: 80%;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-  }
-  
-  .header-wrapper {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .main-container {
-    flex: 1; 
-  }
-  
+    min-height: 100vh; 
+    overflow-x: hidden; 
+}
+
+
+
+/* Main */
+.main-container {
+    flex: 1; /* Para que el main ocupe el espacio restante */
+    width: 100%; /* Ancho del 100% */
+}
+
+/* Footer */
+footer {
+    flex: 0 0 auto; /* Para que el footer no se estire */
+}
