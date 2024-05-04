@@ -6,7 +6,7 @@ function CartIcon( {width, height}) {
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      style={{ marginTop: '3px' }} 
+      style={{ marginTop: '0px', marginRight: '8px' }} 
       
     >
       <path
