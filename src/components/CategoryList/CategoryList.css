@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between; 
     align-items: center; 
+    background-color:#012B65;
   }
   
   .brand-logo {
@@ -13,7 +14,7 @@
     display: flex;
     flex-wrap: wrap; 
     list-style: none; 
-    gap: 45px; 
+    gap: 40px; 
     padding-right: 90px;
     margin-top: 22px; 
   
@@ -22,19 +23,16 @@
   .category-list li a {
     text-decoration: none; 
     font-weight: 800; 
-    color: #333; 
+    color: #ffffff; 
     transition: all 0.3s; 
   }
   
   .category-list li a:hover {
     color: #00cc66; 
     transform: scale(1.09); 
-    box-shadow: 0 0 10px rgba(13, 1, 47, 0.079); 
-    background-color: #f2f2f2; 
-    border-radius: 5px; 
+    border-bottom: 2px solid #00cc66; 
     opacity: 0.9; 
   }
-  
   .login-button {
     background-color: #00cc66; 
     color: #fff; 
@@ -44,6 +42,7 @@
     cursor: pointer; 
     transition: background-color 0.3s, color 0.3s;
     margin-top: -30px; 
+    margin-left: 10px;
   }
   
   .login-button:hover {
