@@ -1,12 +1,13 @@
+// Brand.jsx
 import React from 'react';
-import logo from '../assets/azul.svg'; 
+import logo from '../../assets/azul.svg';
+import './Brand.css'; 
 
 function Brand() {
   return (
     <div>
-
       <a href="/">
-        <img src={logo} alt="Logo de Shoppy" style={{ width: '180px', height: 'auto', marginTop:'12px',}} />
+        <img src={logo} alt="Logo de Shoppy" className="brand-logo" />
       </a>
     </div>
   );
