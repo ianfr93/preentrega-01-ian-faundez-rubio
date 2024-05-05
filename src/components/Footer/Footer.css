@@ -1,17 +1,17 @@
 /* Footer */
 .footer-section {
-    background-color:rgb(51, 66, 134); 
+    background-color:#012B65;
     color: #fff; 
     padding: 50px 0;
-    width: 100%; /* Ancho del 100% */
+    width: 100%; 
 }
 
 /* Contenedor del footer */
 .container {
-    display: flex; /* Usamos flexbox para centrar el contenido horizontalmente */
-    justify-content: center; /* Centramos horizontalmente */
-    align-items: center; /* Centramos verticalmente */
-    flex-direction: column; /* Alinear elementos verticalmente */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
 }
 
 /* Footer Content */
@@ -73,7 +73,10 @@
 .copyright-area {
     background-color: #28a745; 
     color: #fff; 
-    padding: 20px 0;
+    padding: 0px 0;
+    width: 100%;
+    position: fixed; /* Fijar el pie de página */
+    bottom: 0; 
 }
 
 /* Enlace de Copyright */

@@ -13,11 +13,11 @@ function Footer() {
               <div className="footer-widget">
                
                 <div className="footer-text">
-                  <h2>
+                  <h4>
                     Lorem ipsum dolor sit amet, consec tetur adipisicing elit,
                     sed do eiusmod tempor incididuntut consec tetur adipisicing
                     elit, Lorem ipsum dolor sit amet.
-                  </h2>
+                  </h4>
                 </div>
                 <div className="footer-contact-info">
                   <span>
