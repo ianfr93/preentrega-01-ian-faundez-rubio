@@ -1,17 +1,18 @@
-import React from 'react';
+import useCount from "../../hooks/useCount";
+import ItemCount from "../ItemCount/ItemCount";
 
-function ItemListContainer({ Saludo }) {
+function ItemListContainer({ saludo }) {
+  const { count, decrement, increment } = useCount(0);
+
   return (
-    <div style={{
-      fontSize: '30px',
-      fontWeight: '900',
-      color: '#334286', 
-      textAlign: 'left',
-      margin: '20px 0',
-      padding: '0 20px', 
-      fontfamily: 'Lato', 
-    }}>
-      {Saludo}
+    <div>
+      <h1>{saludo}</h1>
+      <ItemCount
+        count={count}
+        decrement={decrement}
+        increment={increment}
+        stock={3}
+      />
     </div>
   );
 }
