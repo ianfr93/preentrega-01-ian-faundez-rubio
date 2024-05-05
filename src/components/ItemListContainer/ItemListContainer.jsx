@@ -11,7 +11,7 @@ function ItemListContainer({ saludo }) {
         count={count}
         decrement={decrement}
         increment={increment}
-        stock={3}
+        stock={5}
       />
     </div>
   );
