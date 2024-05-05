@@ -21,6 +21,11 @@ function CategoryList() {
         <li>
           <a href="/#">Servicios</a>
         </li>
+
+        <li>
+          <a href="/#">Seguir mi pedido</a>
+        </li>
+
       
         <li>
           <a href="/#">contacto</a>
