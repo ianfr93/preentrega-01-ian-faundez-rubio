@@ -1,5 +1,6 @@
 import useCount from "../../hooks/useCount";
 import ItemCount from "../ItemCount/ItemCount";
+import "./ItemCount.css";
 
 function ItemListContainer({ saludo }) {
   const { count, decrement, increment } = useCount(0);
