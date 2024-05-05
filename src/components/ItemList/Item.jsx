@@ -3,7 +3,6 @@ import useCount from "../../hooks/useCount";
 import ItemCount from "../ItemCount/ItemCount";
 import "./Item.css";
 
-
 export default function Item({ item }) {
   const { count, increment, decrement } = useCount(0);
 
@@ -17,11 +16,11 @@ export default function Item({ item }) {
   return (
     <div className="item__container">
       <div className="item--img_container">
-        <img className="item--img" src={item.image} alt={item.title} />
+        <img className="item--img" src={item.imagen} alt={item.titulo} />
       </div>
-      <h2 className="item--title">{item.title}</h2>
-      <p className="item--description">{item.description}</p>
-      <p className="item--price">${item.price}</p>
+      <h2 className="item--title">{item.titulo}</h2>
+      <p className="item--description">{item.descripcion}</p>
+      <p className="item--price">${item.precio}</p>
 
       <div className="item-counter__container">
         <ItemCount
