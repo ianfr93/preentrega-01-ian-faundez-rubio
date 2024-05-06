@@ -10,7 +10,7 @@ function ItemListContainer({ saludo }) {
 
   return (
     <div style={{ padding: "20px", textAlign: "center" }}>
-      <h1 style={{ fontSize: "2em", marginBottom: "40px" }}>{saludo}</h1>
+      <h1 style={{ fontSize: "2.5em", marginBottom: "40px" }}>{saludo}</h1>
       <ItemList products={products}>
         {products.map((product) => (
           <Link key={product.id} to={`/product/${product.id}`}>
