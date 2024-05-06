@@ -1,20 +1,25 @@
-import React from "react";
-import Item from "../ItemList/Item";
+import { useEffect, useState } from "react";
+import { getProducts } from "../../mock/asyncMock";
+
+import ItemList from "../ItemList/ItemList";
 
 function ItemListContainer({ saludo }) {
+  const [products, setProducts] = useState([]);
+
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    getProducts()
+      .then((data) => setProducts(data))
+      .finally(() => setIsLoading(false));
+  }, []);
+
+  if (isLoading) return <h1>Cargando...</h1>;
+
   return (
     <div>
       <h1>{saludo}</h1>
-      <Item
-        item={{
-          id: 2,
-          titulo: "Smartphone Samsung Galaxy S20 Ultra",
-          precio: 1199.99,
-          descripcion: "Teléfono inteligente con cámara de 108MP, pantalla Dynamic AMOLED de 6.9 pulgadas y 5G.",
-          imagen: "https://falabella.scene7.com/is/image/Falabella/gsc_118683455_2178377_1?wid=1500&hei=1500&qlt=70",
-          stock: 15
-        }}
-      />
+      <ItemList products={products} />
     </div>
   );
 }
