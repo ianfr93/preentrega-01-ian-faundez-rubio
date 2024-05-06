@@ -64,12 +64,17 @@
   }
 
   .menu-toggle .bar {
-    width: 25px;
+    width: 25px; /* Ancho suficiente para las tres barras */
     height: 3px;
     background-color: #ffffff;
     margin: 5px;
     transition: 0.4s;
-  }
+    margin-left: 180px;
+ transform: translateY(20px);
+
+ 
+}
+
 
 
   .login-button {
