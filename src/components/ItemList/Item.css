@@ -1,12 +1,21 @@
-.item__container {
+.item-list__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Alinea los elementos al principio */
+    margin: 20px 0; /* Elimina los márgenes laterales y ajusta solo el margen superior e inferior */
+  }
+  
+  .item__container {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
     background-color: #fff;
-    max-width: 350px; 
-    margin: 20px auto; 
-    padding: 20px; 
+    width: calc(33.33% - 40px); /* Ajusta el ancho de la tarjeta */
+    max-width: calc(33.33% - 40px); /* Asegura que el ancho no exceda el 33.33% */
+    margin: 20px 10px; /* Ajusta los márgenes */
+    padding: 20px;
+    box-sizing: border-box; /* Asegura que el padding se tenga en cuenta en el cálculo del tamaño */
   }
   
   .item__container:hover {
@@ -16,7 +25,7 @@
   .item--img_container {
     position: relative;
     width: 100%;
-    height: 200px;
+    height: 150px; /* Ajusta la altura de la imagen */
   }
   
   .item--img {
@@ -47,10 +56,10 @@
   
   .item--cart__button {
     display: block;
-    width: 250px; 
-    margin: 10px auto; 
-    padding: 10px 0; 
-    background-color: #012B65;
+    width: 100%; /* Cambiado a 100% para que el botón se ajuste al contenedor */
+    margin: 10px 0; /* Modificado para centrar el botón */
+    padding: 10px 0;
+    background-color: #012b65;
     color: #fff;
     border: none;
     border-radius: 5px;
