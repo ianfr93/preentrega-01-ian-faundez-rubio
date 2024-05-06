@@ -37,5 +37,6 @@ export default function Item({ item }) {
         </button>
       </div>
     </div>
+   
   );
 }
