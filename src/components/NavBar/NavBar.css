@@ -38,3 +38,47 @@
     display: block;
   }
 }
+
+
+/* Estilos adicionales para dispositivos móviles */
+@media screen and (max-width: 576px) {
+  .navbar__wrapper {
+    flex-direction: column;
+    align-items: center; 
+    padding: 0; 
+  }
+
+  .menu-toggle {
+    display: block; 
+    margin-top: 1rem; 
+  }
+
+  .category-list {
+    display: none; 
+    width: 100%;
+    text-align: center; 
+  }
+
+  .category-list.active {
+    display: block; 
+  }
+
+  .menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 5px;
+    transition: 0.4s;
+  }
+
+
+  .login-button {
+    width: 100%; 
+  }
+
+  .item--container {
+    flex-basis: calc(50% - 20px); 
+    max-width: calc(50% - 20px); 
+    margin: 0 10px 20px; 
+  }
+}
