@@ -8,7 +8,7 @@ function App() {
   return (
     <Layout>
       <div className="header__wrapper"></div>
-      <ItemListContainer Saludo="Hola Bienvenido a tu centro de ventas Tecnologico" />
+      <ItemListContainer saludo="¡Hola! Bienvenido a nuestra tienda"/>
     </Layout>
   );
 }

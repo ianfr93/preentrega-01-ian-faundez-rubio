@@ -47,7 +47,7 @@ function Footer() {
                   </p>
                 </div>
                 <div className="footer-social-icon">
-                  <span>Follow us</span>
+                 
                   <a href="#">
                     <i className="fab fa-facebook-f facebook-bg"></i>
                   </a>

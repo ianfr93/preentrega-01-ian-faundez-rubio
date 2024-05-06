@@ -4,11 +4,21 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
     background-color: #fff;
-    flex-basis: calc(25% - 40px); /* Ajusta el ancho para que ocupe el 25% del contenedor y ten en cuenta el margen entre tarjetas */
+    flex-basis: calc(25% - 40px); 
     box-sizing: border-box;
-    max-width: calc(25% - 40px); /* Ajusta el ancho máximo para que no exceda el 25% del contenedor */
-    padding: 20px; /* Agrega un espacio alrededor de los elementos dentro de la tarjeta */
-    margin: 0 20px 30px; /* Ajusta el margen izquierdo y derecho */
+    max-width: calc(25% - 40px); 
+    padding: 20px; 
+    margin: 0 20px 30px; 
+    border: 2.5px solid transparent; 
+}
+
+
+
+/* Agrega efecto al pasar el mouse sobre la tarjeta */
+.item__container:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    border-color: #012b65; 
+    transform: scale(1.05); 
 }
 
 .item--img_container {
