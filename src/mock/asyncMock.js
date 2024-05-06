@@ -59,7 +59,7 @@ const productos = [
       id: 8,
       titulo: "Teclado Mecánico Corsair K95 RGB Platinum XT",
       precio: 89.990,
-      descripcion: "Teclado gaming mecánico con interruptores Cherry MX Speed, retroiluminación RGB y controles multimedia dedicados lo mejor del mercado.",
+      descripcion: "Teclado gaming mecánico con interruptores Cherry MX Speed, retroiluminación RGB y controles multimedia dedicados lo mejor.",
       imagen: "https://falabella.scene7.com/is/image/Falabella/gsc_129112712_5467021_1?wid=1500&hei=1500&qlt=70",
       stock: 18
     },
@@ -155,7 +155,7 @@ const productos = [
       id: 20,
       titulo: "Teclado Razer Huntsman V2 Switch Red Ingles - Crazygames",
       precio:  229.900,
-      descripcion: "Teclado mecánico con switches óptico-mecánicos, retroiluminación RGB personalizable y reposamuñecas magnético.",
+      descripcion: "Teclado mecánico con switches óptico-mecánicos, retroiluminación RGB personalizable y reposamuñecas magnético lo mejor del mercado premido por los profesionales.",
       imagen: "https://falabella.scene7.com/is/image/Falabella/gsc_119960209_2540248_1?wid=1500&hei=1500&qlt=70",
       stock: 8
     },

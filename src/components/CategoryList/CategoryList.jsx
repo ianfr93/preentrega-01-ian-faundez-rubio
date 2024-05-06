@@ -33,7 +33,7 @@ function CategoryList() {
 
         <li>
           
-          <button className="login-button">Ingresar</button>
+          <button className="login-button">Ingresar a mi cuenta</button>
         </li>
         
       </ul>

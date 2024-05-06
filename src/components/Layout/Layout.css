@@ -3,6 +3,7 @@ body {
     margin: 0; 
     padding: 0; 
     overflow-x: hidden; 
+    font-family: 'Lato', sans-serif; /* Aplicar la tipografía Lato al cuerpo del documento */
 }
 
 /* Layout */
@@ -13,8 +14,6 @@ body {
     overflow-x: hidden; 
 }
 
-
-
 /* Main */
 .main-container {
     flex: 1; /* Para que el main ocupe el espacio restante */
@@ -24,4 +23,26 @@ body {
 /* Footer */
 footer {
     flex: 0 0 auto; /* Para que el footer no se estire */
+}
+
+/* Estilos de tipografía para encabezados */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato', sans-serif; 
+    font-weight: 700;
+}
+
+/* Estilos de tipografía para spans */
+span {
+    font-family: 'Lato', sans-serif; 
+    font-weight: 600;
+}
+
+/* Estilos de tipografía para párrafos */
+p {
+    font-family: 'Lato', sans-serif; 
+    font-weight: 400;
+}
+li a{
+    font-family: 'Lato', sans-serif; 
+    font-weight: 400;
 }
