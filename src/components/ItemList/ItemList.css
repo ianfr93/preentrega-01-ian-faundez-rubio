@@ -1,0 +1,7 @@
+.item-list_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Ajusta según sea necesario */
+    margin: 20px 0;
+    padding: 0 10px; /* Ajusta el relleno lateral del contenedor */
+}

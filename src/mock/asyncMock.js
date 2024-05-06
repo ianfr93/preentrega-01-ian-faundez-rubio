@@ -3,7 +3,7 @@ const productos = [
       id: 1,
       titulo: "Laptop Lenovo ThinkPad X1 Carbon",
       precio: 600.000,
-      descripcion: "Laptop ultraligera con procesador Intel Core i7 y pantalla Full HD de 14 pulgadas.",
+      descripcion: "Laptop ultraligera con procesador Intel Core i7 y pantalla Full HD de 14 pulgadas la mejor del mercado.",
       imagen: "https://falabella.scene7.com/is/image/Falabella/gsc_129114842_5468651_1?wid=1500&hei=1500&qlt=70",
       stock: 10
     },
@@ -25,7 +25,7 @@ const productos = [
     },
     {
       id: 4,
-      titulo: "Tablet Apple iPad Pro (2021)",
+      titulo: "Tablet Apple iPad Pro año (2021)",
       precio: 250.000,
       descripcion: "Tablet con pantalla Liquid Retina XDR de 12.9 pulgadas, chip M1 y soporte para Apple Pencil de segunda generación.",
       imagen: "https://falabella.scene7.com/is/image/Falabella/16627330_01?wid=1500&hei=1500&qlt=70",
@@ -43,15 +43,15 @@ const productos = [
       id: 6,
       titulo: "Auriculares Inalámbricos Apple AirPods Pro",
       precio: 150.000,
-      descripcion: "Auriculares inalámbricos con cancelación activa de ruido, modo de sonido ambiente y resistencia al agua y al sudor.",
+      descripcion: "Auriculares inalámbricos con cancelación activa de ruido, modo de sonido ambiente y resistencia al agua y al sudor durabilidad por años .",
       imagen: "https://falabella.scene7.com/is/image/Falabella/16957308_2?wid=1500&hei=1500&qlt=70",
       stock: 12
     },
     {
       id: 7,
-      titulo: "Smartwatch Garmin Fenix 6 Pro",
+      titulo: "Smartwatch Garmin Fenix 6 Pro modelo 2024",
       precio: 80.000,
-      descripcion: "Smartwatch multideporte con GPS, monitorización de frecuencia cardíaca y seguimiento de actividad avanzado.",
+      descripcion: "Smartwatch multideporte con GPS, monitorización de frecuencia cardíaca y seguimiento de actividad avanzado lo mejor del mercado.",
       imagen: "https://falabella.scene7.com/is/image/Falabella/gsc_123313623_3638547_1?wid=1500&hei=1500&qlt=70",
       stock: 6
     },
@@ -59,7 +59,7 @@ const productos = [
       id: 8,
       titulo: "Teclado Mecánico Corsair K95 RGB Platinum XT",
       precio: 89.990,
-      descripcion: "Teclado gaming mecánico con interruptores Cherry MX Speed, retroiluminación RGB y controles multimedia dedicados.",
+      descripcion: "Teclado gaming mecánico con interruptores Cherry MX Speed, retroiluminación RGB y controles multimedia dedicados lo mejor del mercado.",
       imagen: "https://falabella.scene7.com/is/image/Falabella/gsc_129112712_5467021_1?wid=1500&hei=1500&qlt=70",
       stock: 18
     },
@@ -91,7 +91,7 @@ const productos = [
       id: 12,
       titulo: "Parlantes Logitech Pc Notebook Usb 2.0 S150",
       precio: 16.980,
-      descripcion: "Sistema de altavoces 5.1 con sonido envolvente THX, 500 vatios de potencia y múltiples opciones de conexión.",
+      descripcion: "Sistema de altavoces 5.1 con sonido envolvente THX, 500 vatios de potencia y múltiples opciones de conexión lo mejor del mercado.",
       imagen: "https://falabella.scene7.com/is/image/Falabella/gsc_110718619_181965_1?wid=1500&hei=1500&qlt=70",
       stock: 7
     },
@@ -113,7 +113,7 @@ const productos = [
     },
     {
       id: 15,
-      titulo: "Micrófono Blue Yeti X",
+      titulo: "Micrófono Blue Yeti X modelo 2024",
       precio: 129.990,
       descripcion: "Micrófono USB con cuatro cápsulas de condensador, matriz LED y control de mezcla en tiempo real.",
       imagen: "https://falabella.scene7.com/is/image/Falabella/gsc_129319583_5553489_1?wid=1500&hei=1500&qlt=70",
@@ -121,7 +121,7 @@ const productos = [
     },
     {
       id: 16,
-      titulo: "Silla Gaming  Eureka Max",
+      titulo: "Silla Gaming  Eureka Max año 2024",
       precio: 319.990,
       descripcion: "Silla gaming ergonómica con soporte lumbar ajustable, reposabrazos 4D y cuero PU de primera calidad.",
       imagen: "https://falabella.scene7.com/is/image/Falabella/gsc_125822623_4339938_1?wid=1500&hei=1500&qlt=70",
@@ -137,17 +137,17 @@ const productos = [
     },
     {
       id: 18,
-      titulo: "Robot Aspirador iRobot Roomba i7+",
+      titulo: "Robot Aspirador iRobot Roomba i7+ modelo 2024",
       precio: 799.99,
-      descripcion: "Robot aspirador con tecnología de navegación vSLAM, base de autovaciado y compatibilidad con asistentes de voz.",
+      descripcion: "Robot aspirador con tecnología de navegación vSLAM, base de autovaciado y compatibilidad con asistentes de voz lo mejor del mercado al mejor precio producto premiado.",
       imagen: "https://falabella.scene7.com/is/image/Falabella/gsc_126560127_4601945_1?wid=1500&hei=1500&qlt=70",
       stock: 5
     },
     {
       id: 19,
-      titulo: "Webcam Logitech C920 HD Pro",
+      titulo: "Webcam Logitech C920 HD Pro modelo 2024",
       precio: 83.990,
-      descripcion: "Cámara web Full HD con enfoque automático, corrección de luz automática y micrófonos duales integrados.",
+      descripcion: "Cámara web Full HD con enfoque automático, corrección de luz automática y micrófonos duales integrados lo mejor del mercado producto premiado y aclamado por la critica.",
       imagen: "https://falabella.scene7.com/is/image/Falabella/gsc_114165274_907134_1?wid=1500&hei=1500&qlt=70",
       stock: 10
     },
