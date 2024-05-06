@@ -1,30 +1,29 @@
-import React, { useEffect, useState } from "react";
-import { getProducts } from "../../mock/asyncMock";
+import React from "react";
+import { Link } from "react-router-dom";
 import ItemList from "../ItemList/ItemList";
+import useProducts from "../../hooks/useProducts";
 
 function ItemListContainer({ saludo }) {
-  const [products, setProducts] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
-  const [showSaludo, setShowSaludo] = useState(false); // Estado para controlar la visibilidad del saludo
-
-  useEffect(() => {
-    getProducts()
-      .then((data) => {
-        setProducts(data);
-        setShowSaludo(true); // Mostrar el saludo después de cargar los productos
-      })
-      .catch((error) => console.error("Error al obtener productos:", error))
-      .finally(() => setIsLoading(false));
-  }, []);
+  const { isLoading, products } = useProducts();
 
   if (isLoading) return <h1>Cargando...</h1>;
 
   return (
     <div style={{ padding: "20px", textAlign: "center" }}>
-    {/* Mostrar el saludo si showSaludo es true */}
-    {showSaludo && <h1 style={{ fontSize: "2em", marginBottom: "40px" }}>{saludo}</h1>}
-    <ItemList products={products} />
-  </div>
+      <h1 style={{ fontSize: "2em", marginBottom: "40px" }}>{saludo}</h1>
+      <ItemList products={products}>
+        {products.map((product) => (
+          <Link key={product.id} to={`/product/${product.id}`}>
+            <div>
+              <h2>{product.titulo}</h2>
+              <p>{product.descripcion}</p>
+              <p>Precio: ${product.precio}</p>
+              <p>Stock disponible: {product.stock}</p>
+            </div>
+          </Link>
+        ))}
+      </ItemList>
+    </div>
   );
 }
 

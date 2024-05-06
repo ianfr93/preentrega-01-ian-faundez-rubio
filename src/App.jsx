@@ -1,15 +1,17 @@
 import React from "react";
-import "./App.css";
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
-import Layout from "./components/Layout/Layout";
+import ItemDetail from "./components/ItemDetail/ItemDetail"; 
+
 
 function App() {
   return (
-    <Layout>
-      <div className="header__wrapper"></div>
-      <ItemListContainer saludo="¡Hola! Bienvenido a nuestra tienda"/>
-    </Layout>
+    <Router>
+      <Routes>
+        <Route path="/" element={<ItemListContainer saludo="¡Bienvenido a nuestra tienda!" />} />
+        <Route path="/product/:id" element={<ItemDetail />} />
+      </Routes>
+    </Router>
   );
 }
 
