@@ -27,15 +27,15 @@
 .footer-social-icon {
     margin-top: 20px;
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
+    justify-content: center; 
+    align-items: center; 
     margin-bottom: 30px;
 }
 
 .footer-social-icon a {
-    position: relative; /* Hace que el elemento sea el contexto de posición */
+    position: relative; 
     display: inline-block;
-    margin: 0 20px; /* Ajusta el espacio entre los iconos */
+    margin: 0 20px; 
 }
 
 .footer-social-icon a i {
@@ -115,7 +115,7 @@
     color: #fff; 
     padding: 0px 0;
     width: 100%;
-    position: fixed; /* Fijar el pie de página */
+    position: fixed; 
     bottom: 0; 
 }
 
