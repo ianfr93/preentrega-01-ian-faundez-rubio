@@ -1,17 +1,12 @@
 import React from "react";
 import "./ItemCount.css";
+import useCount from "../../hooks/useCount"; // Asegúrate de importar correctamente tu hook
 
-export default function ItemCount({ stock, count, increment, decrement }) {
-  const handleDecrement = () => {
-    if (count > 0) {
-      decrement();
-    }
-  };
+export default function ItemCount({ stock, initialCount, addToCart }) {
+  const { count, increment, decrement } = useCount(initialCount);
 
-  const handleIncrement = () => {
-    if (count < stock) {
-      increment();
-    }
+  const handleAddToCart = () => {
+    addToCart(count);
   };
 
   return (
@@ -19,7 +14,7 @@ export default function ItemCount({ stock, count, increment, decrement }) {
       <div className="item--count--counter__container">
         <button
           className="item--count-button"
-          onClick={handleDecrement}
+          onClick={decrement}
           disabled={count === 0} // Desactivar cuando count es 0
         >
           -
@@ -27,12 +22,13 @@ export default function ItemCount({ stock, count, increment, decrement }) {
         <span className="item--count-button">{count}</span>
         <button
           className="item--count-button"
-          onClick={handleIncrement}
+          onClick={increment}
           disabled={count >= stock}
         >
           +
         </button>
       </div>
+  
     </div>
   );
 }

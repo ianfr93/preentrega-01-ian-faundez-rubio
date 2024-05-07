@@ -34,7 +34,7 @@
 }
 
 .item--title {
-    font-size: 18px;
+    font-size: 10px;
     font-weight: bold;
     color: #333;
     margin: 10px 0;
@@ -55,14 +55,14 @@
 
 .item--cart__button {
     display: block;
-    width: calc(100% - 40px); /* Reduce el ancho del botón para dejar espacio a cada lado */
-    margin: 20px auto 0; /* Margen superior de 20px y 0 en los laterales, centrado horizontalmente */
-    padding: 15px 0; /* Ajusta el espacio dentro del botón */
+    width: calc(100% - 40px); 
+    margin: 20px auto 0;
+    padding: 15px 0; 
     background-color: #012b65;
     color: #fff;
     border: none;
     border-radius: 5px;
-    font-size: 18px; /* Ajusta el tamaño del texto del botón */
+    font-size: 18px; 
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
