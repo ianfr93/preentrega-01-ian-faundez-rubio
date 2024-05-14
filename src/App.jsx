@@ -1,32 +1,24 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import ItemDetail from "./components/ItemDetail/ItemDetail";
+import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
 import Layout from "./components/Layout/Layout";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
-import { getProducts } from "./mock/asyncMock";
+import Navbar from "./components/NavBar/NavBar"; 
+import useProducts from "./hooks/useProducts";
 
 function App() {
-  const [products, setProducts] = useState([]);
+  const { products, isLoading } = useProducts();
 
-  useEffect(() => {
-    const fetchProducts = async () => {
-      try {
-        const productList = await getProducts();
-        setProducts(productList);
-      } catch (error) {
-        console.error("Error fetching products:", error);
-      }
-    };
-
-    fetchProducts();
-  }, []);
+  if (isLoading) return <h1>Cargando...</h1>;
 
   return (
     <Router>
+      <Navbar />
       <Layout>
         <Routes>
-          <Route path="/" element={<ItemListContainer saludo="¡Bienvenido a nuestra tienda!" />} />
-          <Route path="/product/:id" element={<ItemDetail products={products} />} />
+          <Route path="/" element={<ItemListContainer saludo="¡Bienvenido a nuestra tienda!" products={products} />} />
+          <Route path="/category/:id" element={<ItemListContainer saludo="¡Bienvenido a nuestra tienda!" products={products} />} />
+          <Route path="/item/:id" element={<ItemDetailContainer products={products} />} />
         </Routes>
       </Layout>
     </Router>
