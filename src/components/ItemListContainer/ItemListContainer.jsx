@@ -1,28 +1,45 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import ItemList from "../ItemList/ItemList";
-import useProducts from "../../hooks/useProducts";
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import { getProducts } from '../../mock/asyncMock';
+import './ItemListContainer.css';
 
 function ItemListContainer({ saludo }) {
-  const { isLoading, products } = useProducts();
+  const [products, setProducts] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchProducts = async () => {
+      try {
+        const productList = await getProducts();
+        setProducts(productList);
+      } catch (error) {
+        console.error("Error fetching products:", error);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    fetchProducts();
+  }, []);
 
   if (isLoading) return <h1>Cargando...</h1>;
 
   return (
-    <div style={{ padding: "20px", textAlign: "center" }}>
-      <h1 style={{ fontSize: "2.5em", marginBottom: "40px" }}>{saludo}</h1>
-      <ItemList products={products}>
-        {products.map((product) => (
-          <Link key={product.id} to={`/product/${product.id}`}>
-            <div>
+    <div className="item-list-container">
+      <h1 className="saludo">{saludo}</h1>
+      <div className="product-list">
+        {products.map(product => (
+          <div key={product.id} className="product-card">
+            <Link to={`/product/${product.id}`}>
               <h2>{product.titulo}</h2>
               <p>{product.descripcion}</p>
               <p>Precio: ${product.precio}</p>
               <p>Stock disponible: {product.stock}</p>
-            </div>
-          </Link>
+              <img src={product.imagen} alt={product.titulo} />
+            </Link>
+          </div>
         ))}
-      </ItemList>
+      </div>
     </div>
   );
 }

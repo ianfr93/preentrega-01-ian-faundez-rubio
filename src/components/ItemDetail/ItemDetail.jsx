@@ -7,8 +7,9 @@ import ItemCount from "../ItemCount/ItemCount";
 
 function ItemDetail({ products }) {
   const { id } = useParams();
+  
   const product = products.find((product) => product.id === parseInt(id));
-  const [count, setCount] = useState(1);
+  const [count, setCount] = useState(0);
 
   if (!product) {
     return <h1>Producto no encontrado</h1>;

@@ -163,8 +163,16 @@ const productos = [
 
 export const getProducts = () => {
     return new Promise((resolve) => {
-        setTimeout(() => {
-            resolve(productos);
-        }, 2000);
+      setTimeout(() => {
+        resolve(productos);
+      }, 2000);
     });
-};
+  };
+  
+  export const getProductById = (id) => {
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        resolve(productos.find(product => product.id === id));
+      }, 2000);
+    });
+  };

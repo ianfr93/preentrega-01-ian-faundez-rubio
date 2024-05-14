@@ -1,20 +1,26 @@
-import React, { useEffect, useState } from "react";
-import { getProducts } from "../mock/asyncMock";
+import { useState, useEffect } from 'react';
+import { getProducts } from '../../mock/asyncMock';
 
-export default function useProducts(){
-    const [products, setProducts] = useState([]);
-    const [isLoading, setIsLoading] = useState(true);
-    const [showSaludo, setShowSaludo] = useState(false); // Estado para controlar la visibilidad del saludo
-  
-    useEffect(() => {
-      getProducts()
-        .then((data) => {
-          setProducts(data);
-          setShowSaludo(true); // Mostrar el saludo después de cargar los productos
-        })
-        .catch((error) => console.error("Error al obtener productos:", error))
-        .finally(() => setIsLoading(false));
-    }, []);
+function useProducts() {
+  const [isLoading, setIsLoading] = useState(true);
+  const [products, setProducts] = useState([]);
 
-  return { products, isLoading };
+  useEffect(() => {
+    const fetchProducts = async () => {
+      try {
+        const productList = await getProducts();
+        setProducts(productList);
+        setIsLoading(false);
+      } catch (error) {
+        console.error("Error fetching products:", error);
+        setIsLoading(false);
+      }
+    };
+
+    fetchProducts();
+  }, []);
+
+  return { isLoading, products };
 }
+
+export default useProducts;
