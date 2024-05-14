@@ -1,25 +1,29 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { getProducts } from '../../mock/asyncMock'; 
 import './CategoryBar.css';
 
 const CategoryBar = () => {
   const [categories, setCategories] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
+  const [products, setProducts] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     getProducts().then(products => {
+      setProducts(products);
       const uniqueCategories = [...new Set(products.map(product => product.categoria))];
       setCategories(uniqueCategories);
     });
   }, []);
 
-  const filteredCategories = categories.filter(category =>
-    category.toLowerCase().includes(searchTerm.toLowerCase())
-  );
-
   const handleSearch = () => {
-    // Función para manejar la búsqueda, si es necesario
+    const filteredProducts = products.filter(product => 
+      product.titulo.toLowerCase().includes(searchTerm.toLowerCase()) || 
+      product.descripcion.toLowerCase().includes(searchTerm.toLowerCase()) || 
+      product.categoria.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+    navigate('/search', { state: { results: filteredProducts } });
   };
 
   return (
@@ -27,7 +31,7 @@ const CategoryBar = () => {
       <div className="search-container">
         <input
           type="text"
-          placeholder="Buscar categorías..."
+          placeholder="Buscar productos..."
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
           className="category-search"
@@ -38,7 +42,7 @@ const CategoryBar = () => {
         <li>
           <Link to="/">Todos los productos</Link>
         </li>
-        {filteredCategories.map(category => (
+        {categories.map(category => (
           <li key={category}>
             <Link to={`/category/${category}`}>{category}</Link>
           </li>

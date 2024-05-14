@@ -3,12 +3,12 @@
   justify-content: space-between;
   padding: 1rem;
   align-items: center;
+  background-color: #012B65;
 }
 
 .menu-toggle {
   display: none;
   cursor: pointer;
-  margin-top: 8px;
 }
 
 .menu-toggle .bar {
@@ -22,7 +22,8 @@
 .right-items {
   display: flex;
   align-items: center;
-  gap: 30px;
+gap: 30px;
+
 }
 
 .login-item {
@@ -40,17 +41,16 @@
 
 .login-link .user-icon {
   font-size: 1.5rem;
-  margin-right: 10px; /* Añade separación entre el icono y el texto */
+  margin-right: 20px; 
 }
 
 .login-link:hover {
-  color: #ccc; /* Cambia de color cuando pasas el cursor sobre el enlace */
+  color: #ccc; 
 }
 
 @media screen and (max-width: 768px) {
   .menu-toggle {
     display: block;
-    margin-top: 0; /* Ajusta el margen superior */
   }
 
   .navbar__wrapper {
@@ -65,6 +65,10 @@
   .category-list.active {
     display: block;
   }
+
+  .right-items {
+    margin-top: 1rem;
+  }
 }
 
 /* Estilos adicionales para dispositivos móviles */
@@ -77,8 +81,10 @@
 
   .menu-toggle {
     display: block; 
-    margin-top: 1rem; 
-  }
+    margin-top: 1rem;
+   }
+  
+  
 
   .category-list {
     display: none; 
