@@ -19,7 +19,7 @@ const CategoryBar = () => {
   );
 
   const handleSearch = () => {
-
+    // Función para manejar la búsqueda, si es necesario
   };
 
   return (
@@ -35,6 +35,9 @@ const CategoryBar = () => {
         <button onClick={handleSearch} className="search-button">Buscar</button>
       </div>
       <ul className="category-list">
+        <li>
+          <Link to="/">Todos los productos</Link>
+        </li>
         {filteredCategories.map(category => (
           <li key={category}>
             <Link to={`/category/${category}`}>{category}</Link>

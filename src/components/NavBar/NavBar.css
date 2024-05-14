@@ -19,6 +19,34 @@
   transition: 0.4s;
 }
 
+.right-items {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.login-item {
+  display: flex;
+  align-items: center;
+}
+
+.login-link {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  margin-left: 30px;
+}
+
+.login-link .user-icon {
+  font-size: 1.5rem;
+  margin-right: 10px; /* Añade separación entre el icono y el texto */
+}
+
+.login-link:hover {
+  color: #ccc; /* Cambia de color cuando pasas el cursor sobre el enlace */
+}
+
 @media screen and (max-width: 768px) {
   .menu-toggle {
     display: block;
@@ -38,7 +66,6 @@
     display: block;
   }
 }
-
 
 /* Estilos adicionales para dispositivos móviles */
 @media screen and (max-width: 576px) {
@@ -70,12 +97,8 @@
     margin: 5px;
     transition: 0.4s;
     margin-left: 180px;
- transform: translateY(20px);
-
- 
-}
-
-
+    transform: translateY(20px);
+  }
 
   .login-button {
     width: 100%; 

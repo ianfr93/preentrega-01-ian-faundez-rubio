@@ -9,7 +9,6 @@ function CategoryList() {
         <li>
           <Link to="/">Home</Link>
         </li>
-      
         <li>
           <Link to="/category/gamer-zone">Gamer Zone</Link>
         </li>
@@ -27,9 +26,6 @@ function CategoryList() {
         </li>
         <li>
           <Link to="/category/contacto">Contacto</Link>
-        </li>
-        <li>
-          <button className="login-button">Ingresar</button>
         </li>
       </ul>
     </nav>

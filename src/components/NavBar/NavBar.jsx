@@ -1,28 +1,32 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import CategoryList from '../CategoryList/CategoryList'; 
 import CategoryListMobile from '../CategoryListMobile/CategoryListMobile'; 
 import CartWidget from "../CartWidget/CartWidget";
 import './NavBar.css';
-import CartIcon from "../CartIcon/CartIcon";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGoogle } from '@fortawesome/free-brands-svg-icons'; 
 
 function NavBar() {
-  // Estado para controlar si se muestra el menú en dispositivos móviles
   const [showMenu, setShowMenu] = useState(false);
 
   return (
     <div className='navbar__wrapper'>
-      {/* Botón de menú para dispositivos móviles */}
       <div className='menu-toggle' onClick={() => setShowMenu(!showMenu)}>
         <div className='bar'></div>
         <div className='bar'></div>
         <div className='bar'></div>
       </div>
-   
-      {/* Renderizado condicional del menú */}
       {showMenu ? <CategoryListMobile /> : <CategoryList />}
-      
-      {/* Widget de carrito */}
-      <CartWidget />
+      <div className="right-items">
+        <li className="login-item">
+          <Link to="/login" className="login-link">
+            <FontAwesomeIcon icon={faGoogle} className="user-icon" />
+            <span>Ingresar</span>
+          </Link>
+        </li>
+        <CartWidget />
+      </div>
     </div>
   );
 }
