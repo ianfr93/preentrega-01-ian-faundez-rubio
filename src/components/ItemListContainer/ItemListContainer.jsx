@@ -9,7 +9,7 @@ function ItemListContainer({ saludo, products }) {
 
   useEffect(() => {
     if (id) {
-      const filtered = products.filter(product => product.category === id);
+      const filtered = products.filter(product => product.categoria === id);
       setFilteredProducts(filtered);
       setCategoryTitle(getCategoryTitle(id));
     } else {
@@ -20,8 +20,6 @@ function ItemListContainer({ saludo, products }) {
 
   const getCategoryTitle = (categoryId) => {
     switch (categoryId) {
-      case 'productos':
-        return 'Marcas';
       case 'gamer-zone':
         return 'Gamer Zone';
       case 'arma-tu-pc':
@@ -47,7 +45,7 @@ function ItemListContainer({ saludo, products }) {
       <h2>{categoryTitle}</h2>
       <ItemList products={filteredProducts}>
         {filteredProducts.map(product => (
-          <Link key={product.id} to={`/item/${product.id}`}>
+          <Link key={product.id} to={`/product/${product.id}`}> {/* Asegúrate de que el enlace use '/product' */}
             <div>
               <h2>{product.titulo}</h2>
               <p>{product.descripcion}</p>

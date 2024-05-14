@@ -26,7 +26,6 @@ function ItemDetail({ product }) {
       <p className="item-detail__stock">Stock disponible: {product.stock}</p>
       <ItemCount stock={product.stock} count={count} onCountChange={handleCountChange} />
       <button className="item-detail__button" onClick={handleAddToCart}>Agregar al carrito</button>
-      
       <div className="medios-de-pago">
         <img src="https://comyuonline.cl/wp-content/uploads/2022/05/webpay.png" alt="Medios de Pago" />
       </div>
