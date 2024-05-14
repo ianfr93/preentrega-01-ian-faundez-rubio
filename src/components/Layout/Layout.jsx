@@ -1,3 +1,4 @@
+import React from "react";
 import Brand from "../Brand/Brand";
 import Footer from "../Footer/Footer";
 import NavBar from "../NavBar/NavBar";
@@ -7,11 +8,11 @@ export default function Layout({ children }) {
   return (
     <div className="layout-container">
       <div className="header-wrapper">
-        <Brand/>
-        <NavBar/>
+        <Brand />
+        <NavBar />
       </div>
       <main className="main-container">{children}</main>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

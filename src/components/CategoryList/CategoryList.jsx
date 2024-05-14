@@ -1,41 +1,38 @@
 import "./CategoryList.css";
-import React from "react"; 
+import React from "react";
+import { Link } from "react-router-dom";
 
 function CategoryList() {
   return (
     <nav>
       <ul className="category-list">
         <li>
-          <a href="/#">Marcas</a>
+          <Link to="/">Home</Link>
         </li>
         <li>
-          <a href="/#">Gamer Zone</a>
+          <Link to="/category/vehicles">Marcas</Link>
         </li>
         <li>
-          <a href="/#">Arma tu PC</a>
-        </li>
-      
-        <li>
-          <a href="/#">Tiendas</a>
+          <Link to="/category/gamer-zone">Gamer Zone</Link>
         </li>
         <li>
-          <a href="/#">Servicios</a>
+          <Link to="/category/arma-tu-pc">Arma tu PC</Link>
         </li>
-
         <li>
-          <a href="/#">Seguir mi pedido</a>
+          <Link to="/category/tiendas">Tiendas</Link>
         </li>
-
-      
         <li>
-          <a href="/#">contacto</a>
+          <Link to="/category/servicios">Servicios</Link>
         </li>
-
         <li>
-          
+          <Link to="/category/seguir-mi-pedido">Seguir mi pedido</Link>
+        </li>
+        <li>
+          <Link to="/category/contacto">Contacto</Link>
+        </li>
+        <li>
           <button className="login-button">Ingresar a mi cuenta</button>
         </li>
-        
       </ul>
     </nav>
   );
